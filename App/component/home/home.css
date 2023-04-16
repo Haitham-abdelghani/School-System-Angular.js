@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trirong", serif;
+}
+body{
+    
+    width: 100vw;
+    height: 100vh;
+   
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    /* flex-direction: column; */
+    /* height: 450px;
+    width: 250px; */
+}
+#icons{
+    font-size: 180px;
+}
+h3{
+    color: #ef5e4a;
+    margin-bottom: 20px;
+}
+.login{
+    border: 1px rgb(230, 219, 219) solid;
+    height: 280px;
+    width:450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: #00b1cf;
+    
+}
+form{
+    
+    margin-top: 72px;
+    height: 280px;
+    width:350px
+     ;
+}
+p{
+    color: #00b1cf;
+    padding-top: 10px;
+}
+input{
+    padding: 5px;
+    width: 350px;
+    height: 38px;
+    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input:focus{
+    border:2px   #9bbdf4 solid;
+}
+button{
+    padding: 4px;
+    width: 140px;
+    margin-top: 15px;
+    background-color: #ef5e4a;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    
+}
+#icon-button{
+    /* margin-top: 2px; */
+    font-size: 25px;
+    margin-right: 4px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' -25,
+    'opsz' 48
+  }
+
+  .registrationButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .registrationButton a{
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 15px;
+  }

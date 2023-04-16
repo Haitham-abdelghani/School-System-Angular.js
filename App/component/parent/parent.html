@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent</title>
+    <link rel="stylesheet" href="/App/component/parent/parent.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,-25" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body ng-controller="parentcontrol">
+    <div class="container">
+        <header>
+            <nav>
+                <ul id="openia">
+                    <span id="close-icon" class="material-symbols-outlined" ng-click="toggleMenuclose()">
+                        close
+                        </span>
+                    <li> <span class="material-symbols-sharp">
+                        speed
+                        </span><a href="#!/dashboard">dashboard</a></li>
+                    <li> <span class="material-symbols-outlined">
+                        family_restroom
+                        </span><a href="#!/parent">parent</a></li>
+                    <li><span class="material-symbols-outlined">
+                        local_library
+                        </span><a href="">Teacher</a></li>
+                    <li><span class="material-symbols-outlined">
+                        admin_panel_settings
+                        </span><a href="">admin</a></li>
+                    <li><span class="material-symbols-outlined">
+                        taunt
+                        </span><a href="">Student</a></li>
+                </ul>
+                
+                    <button><span class="material-symbols-outlined">
+                        logout
+                        </span><span href="">Logout</span></button>
+                
+        
+        
+        
+                <!-- build responsive navbar start -->
+                
+               <span id="open-icon"  class="material-symbols-outlined" ng-click="toggleMenu()">
+                menu
+                </span>
+                <!-- build responsive navbar end -->
+        
+            </nav>
+        </header>
+       
+        <main>
+          <div class="container-one">
+            <section>
+                <div class="one
+                "><span class="one-hero"></span><span class="two-hero">a</span> Parent</div> 
+            </section>
+
+            <section>
+
+     <div class="container-table">             <table class="content-info">
+        <thead>
+
+            <tr>
+                <td>ID</td>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Action</th>
+                
+                
+                
+            
+            </tr>
+
+
+        </thead>
+   <tbody>
+
+    <tr ng-repeat="item in data">
+        <td>{{item.id}}</td>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.address}}</td>
+        
+        
+        
+        <td><button ng-click="deleteItem($index)"> <span class="material-symbols-outlined" id="text--icon">
+            delete
+            </span><span id="text--button">Delete</span></button></td>
+    
+  
+   </tbody>
+   
+    </table></div>
+            </section>
+            <section class="content--button">
+                <button ng-click="toggleForm()"><span class="material-symbols-outlined" class="add-icon">
+                    Add
+                    </span><span class="add-button">Add</span></button>
+            </section>
+            <section class="add-content" >
+                <form class="form" method="POST" ng-submit="submitfunction()" ng-show="showForm">
+                    <fieldset>
+                        <legend>Add parent</legend>
+                       <div class="form-part-one">
+                        
+                        <p>First Name:</p>
+                        <input type="text"   placeholder="name" name="firstname" ng-model="user.firstname">
+                        
+                        <p>Last Name:</p>
+                        <input type="text"  placeholder="name" name="lastname" ng-model="user.lastname">
+                    </div>
+                    <div class="form-part-two">
+                        
+                        <p>Phone Number:</p>
+                        <input type="number"  placeholder="name" name="phone" ng-model="user.phone">
+                        
+                        <p>Address:</p>
+                        <input type="text"  placeholder="name" name="address" ng-model="user.address">
+                    </div>
+                  
+                        <div class="form-part-three">
+            
+                            <span class="material-symbols-outlined" id="icon-first-one">
+                                diversity_3
+                                </span>
+            
+                           <div class="form-part-three-part">
+                            <button class="icon-second" type="submit" ><span class="material-symbols-outlined" id="icon-second-one">
+                                download
+                                </span><span id="text-second-one">Save</span></button>
+            
+                                
+                            <button class="icon-three"><span class="material-symbols-outlined" id="icon-third-one">
+                                                                close
+                                </span><span id="text-third-one">Cancel</span></button>
+                           </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+          </div>
+        </main>
+
+          <footer><div class="oneFoot">
+            <div class="twoFoot">
+                <h4>About </h4>
+            <h4>us</h4>
+            <span class="orWall"></span>
+            </div>
+        
+                
+                <h4 class="contact">Contact us</h4>
+           
+           
+        </div>
+        <p>Copyright © 2016 BluLogix, LLC. All Rights Reserved</p></footer>
+    </div>
+</body>
+</html>

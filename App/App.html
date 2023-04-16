@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   
+    <div ng-view></div>
+    
+  
+
+</body>
+<script type="text/javascript" src="angular-component/angular.min.js"></script>
+    
+<script src="angular-component/angular-route.min.js"></script>
+<script src="/App/App.js"></script>
+<script type="text/javascript" src="/App/component/home/home.js"></script>
+<script type="text/javascript" src="/App/component/registration/registration.js"></script>
+<script type="text/javascript" src="/App/component/dashboard/dashboard.js"></script>
+<script type="text/javascript" src="/App/component/parent/parent.js"></script>
+<script src="node_modules/angularfire/dist/angularfire.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>
+
+
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAh96cDMQfMsHP0FpMO0sk_1SJpTxp-QVs",
+    authDomain: "school-system-c0d60.firebaseapp.com",
+    projectId: "school-system-c0d60",
+    storageBucket: "school-system-c0d60.appspot.com",
+    messagingSenderId: "839180438667",
+    appId: "1:839180438667:web:9d5947bb9b848025ed188e",
+    measurementId: "G-21QZ4TWKCX"
+};
+firebase.initializeApp(config);
+</script>
+</html>
